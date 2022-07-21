@@ -1,0 +1,161 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DS3.Native.Hoster.Application</name>
+    </assembly>
+    <members>
+        <member name="T:DS3.Native.Hoster.Application.Loader.Dtos.LaunchGameDto">
+            <summary>
+            启动游戏 Dto
+            </summary>
+        </member>
+        <member name="P:DS3.Native.Hoster.Application.Loader.Dtos.LaunchGameDto.GameExePath">
+            <summary>
+            游戏Exe文件路径
+            </summary>
+        </member>
+        <member name="P:DS3.Native.Hoster.Application.Loader.Dtos.LaunchGameDto.HostName">
+            <summary>
+            要连接的服务器主机名
+            </summary>
+        </member>
+        <member name="P:DS3.Native.Hoster.Application.Loader.Dtos.LaunchGameDto.HostPublicKey">
+            <summary>
+            要连接的服务器公钥
+            </summary>
+        </member>
+        <member name="M:DS3.Native.Hoster.Application.Loader.LoaderService.IsSteamRunningAndLoggedIn">
+            <summary>
+            获取Steam是否运行且登陆
+            </summary>
+            <returns>true or false</returns>
+        </member>
+        <member name="M:DS3.Native.Hoster.Application.Loader.LoaderService.GetGamePath">
+            <summary>
+            获取黑魂3游戏路径
+            </summary>
+            <returns>游戏路径, 未获取到为空字符串</returns>
+        </member>
+        <member name="M:DS3.Native.Hoster.Application.Loader.LoaderService.LaunchGame(DS3.Native.Hoster.Application.Loader.Dtos.LaunchGameDto)">
+            <summary>
+            启动游戏
+            </summary>
+            <param name="dto">参数</param>
+            <returns>成功则返回进程ID否则为空</returns>
+        </member>
+        <member name="T:DS3.Native.Hoster.Application.Save.Dtos.CopySL2CharacterSlotDto">
+            <summary>
+            复制角色槽 Dto
+            </summary>
+        </member>
+        <member name="P:DS3.Native.Hoster.Application.Save.Dtos.CopySL2CharacterSlotDto.SourceSL2FilePath">
+            <summary>
+            源SL2文件路径
+            </summary>
+        </member>
+        <member name="P:DS3.Native.Hoster.Application.Save.Dtos.CopySL2CharacterSlotDto.SourceIndex">
+            <summary>
+            源SL2槽位索引
+            </summary>
+        </member>
+        <member name="P:DS3.Native.Hoster.Application.Save.Dtos.CopySL2CharacterSlotDto.DestinationSL2FilePath">
+            <summary>
+            目标SL2文件路径
+            </summary>
+        </member>
+        <member name="P:DS3.Native.Hoster.Application.Save.Dtos.CopySL2CharacterSlotDto.DestinationIndex">
+            <summary>
+            目标SL2槽位索引
+            </summary>
+        </member>
+        <member name="P:DS3.Native.Hoster.Application.Save.Dtos.CopySL2CharacterSlotDto.ForceCopy">
+            <summary>
+            目标SL2槽位被占用时, 是否强制复制
+            </summary>
+        </member>
+        <member name="T:DS3.Native.Hoster.Application.Save.Dtos.SetSL2SteamIdDto">
+            <summary>
+            更新SL2文件SteamId Dto
+            </summary>
+        </member>
+        <member name="P:DS3.Native.Hoster.Application.Save.Dtos.SetSL2SteamIdDto.SL2FilePath">
+            <summary>
+            目标SL2文件路径
+            </summary>
+        </member>
+        <member name="P:DS3.Native.Hoster.Application.Save.Dtos.SetSL2SteamIdDto.SteamId">
+            <summary>
+            目标SteamId
+            </summary>
+        </member>
+        <member name="P:DS3.Native.Hoster.Application.Save.Dtos.SetSL2SteamIdDto.NewSL2FilePath">
+            <summary>
+            需要写入新文件? 为空字符串或者null则写入原始路径
+            </summary>
+        </member>
+        <member name="T:DS3.Native.Hoster.Application.Save.Dtos.SL2CharacterSlotInformationViewDto">
+            <summary>
+            SL2角色槽信息
+            </summary>
+        </member>
+        <member name="P:DS3.Native.Hoster.Application.Save.Dtos.SL2CharacterSlotInformationViewDto.Index">
+            <summary>
+            角色槽索引
+            </summary>
+        </member>
+        <member name="P:DS3.Native.Hoster.Application.Save.Dtos.SL2CharacterSlotInformationViewDto.Name">
+            <summary>
+            角色名称
+            </summary>
+        </member>
+        <member name="P:DS3.Native.Hoster.Application.Save.Dtos.SL2CharacterSlotInformationViewDto.Level">
+            <summary>
+            角色等级
+            </summary>
+        </member>
+        <member name="P:DS3.Native.Hoster.Application.Save.Dtos.SL2CharacterSlotInformationViewDto.PlayTimeSeconds">
+            <summary>
+            角色游玩时间
+            </summary>
+        </member>
+        <member name="T:DS3.Native.Hoster.Application.Save.Dtos.SL2InformationViewDto">
+            <summary>
+            SL2文件信息 Dto
+            </summary>
+        </member>
+        <member name="P:DS3.Native.Hoster.Application.Save.Dtos.SL2InformationViewDto.SteamId">
+            <summary>
+            SL2文件SteamId
+            </summary>
+        </member>
+        <member name="P:DS3.Native.Hoster.Application.Save.Dtos.SL2InformationViewDto.CharacterSlotInformations">
+            <summary>
+            SL2文件角色槽信息列表 0-9
+            </summary>
+        </member>
+        <member name="M:DS3.Native.Hoster.Application.Save.SaveService.GetSL2Information(System.String)">
+            <summary>
+            获取SL2文件信息
+            </summary>
+            <param name="sl2FilePath">SL2文件路径</param>
+            <returns>SL2文件信息</returns>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:DS3.Native.Hoster.Application.Save.SaveService.SetSL2SteamId(DS3.Native.Hoster.Application.Save.Dtos.SetSL2SteamIdDto)">
+            <summary>
+            设置SL2文件SteamId
+            </summary>
+            <param name="dto">参数</param>
+            <returns>原始SteamId</returns>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:DS3.Native.Hoster.Application.Save.SaveService.CopySL2CharacterSlot(DS3.Native.Hoster.Application.Save.Dtos.CopySL2CharacterSlotDto)">
+            <summary>
+            复制SL2文件角色槽信息
+            </summary>
+            <param name="dto">参数</param>
+            <returns></returns>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+    </members>
+</doc>

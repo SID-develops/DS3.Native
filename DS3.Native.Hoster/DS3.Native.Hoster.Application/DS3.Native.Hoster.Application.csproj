@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<NoWarn>1701;1702;1591</NoWarn>
+		<DocumentationFile>DS3.Native.Hoster.Application.xml</DocumentationFile>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Remove="applicationsettings.json" />
+		<None Remove="DS3.Native.Hoster.Application.xml" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Content Include="applicationsettings.json">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\DS3.Native\DS3.Native.csproj" />
+		<ProjectReference Include="..\DS3.Native.Hoster.Core\DS3.Native.Hoster.Core.csproj" />
+	</ItemGroup>
+
+</Project>

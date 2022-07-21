@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <NoWarn>1701;1702;1591</NoWarn>
+    <DocumentationFile>DS3.Native.Hoster.Web.Core.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="DS3.Native.Hoster.Web.Core.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DS3.Native.Hoster.Application\DS3.Native.Hoster.Application.csproj" />
+    <ProjectReference Include="..\DS3.Native.Hoster.Database.Migrations\DS3.Native.Hoster.Database.Migrations.csproj" />
+  </ItemGroup>
+
+</Project>
