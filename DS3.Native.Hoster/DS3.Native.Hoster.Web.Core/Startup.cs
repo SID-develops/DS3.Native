@@ -29,6 +29,12 @@ public class Startup : AppStartup
 
         app.UseRouting();
 
+        var options = new DefaultFilesOptions
+        {
+            DefaultFileNames = new string[] { "index.html" }
+        };
+
+        app.UseDefaultFiles(options);
         app.UseStaticFiles();
 
         app.UseCorsAccessor();
