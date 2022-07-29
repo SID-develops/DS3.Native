@@ -1,8 +1,10 @@
 ﻿using Furion;
+using Furion.VirtualFileServer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using System.Reflection;
 
 namespace DS3.Native.Hoster.Web.Core;
 
@@ -10,6 +12,7 @@ public class Startup : AppStartup
 {
     public void ConfigureServices(IServiceCollection services)
     {
+        services.AddVirtualFileServer();
         services.AddJwt<JwtHandler>();
 
         services.AddCorsAccessor();
@@ -31,7 +34,8 @@ public class Startup : AppStartup
 
         var options = new DefaultFilesOptions
         {
-            DefaultFileNames = new string[] { "index.html" }
+            DefaultFileNames = new string[] { "index.html" },
+            FileProvider = FS.GetEmbeddedFileProvider(Assembly.GetEntryAssembly())
         };
 
         app.UseDefaultFiles(options);

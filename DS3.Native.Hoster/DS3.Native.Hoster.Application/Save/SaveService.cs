@@ -16,8 +16,13 @@ namespace DS3.Native.Hoster.Application.Save
             if (!File.Exists(sl2FilePath))
                 throw new Exception("无法找到SL2文件!");
 
-            var result = new SL2InformationViewDto() { SteamId = 0, CharacterSlotInformations = new List<SL2CharacterSlotInformationViewDto> { } };
             var sl2 = new DS3_SL2(sl2FilePath);
+
+            var result = new SL2InformationViewDto() 
+            { 
+                SteamId = sl2.MenuFile.SteamId,
+                CharacterSlotInformations = new List<SL2CharacterSlotInformationViewDto> { } 
+            };
 
             for (var i = 0; i < 10; i++)
             {

@@ -1,7 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net6.0-windows</TargetFramework>
+	<UseWindowsForms>true</UseWindowsForms>
     <NoWarn>1701;1702;1591</NoWarn>
     <DocumentationFile>DS3.Native.Hoster.Core.xml</DocumentationFile>
   </PropertyGroup>
@@ -11,9 +12,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Furion" Version="3.8.5" />
-    <PackageReference Include="Furion.Extras.Authentication.JwtBearer" Version="3.8.5" />
-    <PackageReference Include="Furion.Extras.ObjectMapper.Mapster" Version="3.8.5" />
+    <PackageReference Include="Furion" Version="4.1.0" />
+    <PackageReference Include="Furion.Extras.Authentication.JwtBearer" Version="4.1.0" />
+    <PackageReference Include="Furion.Extras.ObjectMapper.Mapster" Version="4.1.0" />
   </ItemGroup>
 
 </Project>
