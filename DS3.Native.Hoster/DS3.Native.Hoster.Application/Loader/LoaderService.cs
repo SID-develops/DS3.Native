@@ -8,7 +8,7 @@ namespace DS3.Native.Hoster.Application.Loader
         /// <summary>
         /// 获取Steam是否运行且登陆
         /// </summary>
-        /// <returns>true or false</returns>
+        /// <returns>返回true或者false</returns>
 
         [HttpGet]
         public Task<bool> IsSteamRunningAndLoggedIn()

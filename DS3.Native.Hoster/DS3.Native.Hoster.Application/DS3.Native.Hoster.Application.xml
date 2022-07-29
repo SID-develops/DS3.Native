@@ -28,7 +28,7 @@
             <summary>
             获取Steam是否运行且登陆
             </summary>
-            <returns>true or false</returns>
+            <returns>返回true或者false</returns>
         </member>
         <member name="M:DS3.Native.Hoster.Application.Loader.LoaderService.GetGamePath">
             <summary>
@@ -139,7 +139,7 @@
             </summary>
             <param name="sl2FilePath">SL2文件路径</param>
             <returns>SL2文件信息</returns>
-            <exception cref="T:System.Exception"></exception>
+            <exception cref="T:System.Exception"></exception> 
         </member>
         <member name="M:DS3.Native.Hoster.Application.Save.SaveService.SetSL2SteamId(DS3.Native.Hoster.Application.Save.Dtos.SetSL2SteamIdDto)">
             <summary>

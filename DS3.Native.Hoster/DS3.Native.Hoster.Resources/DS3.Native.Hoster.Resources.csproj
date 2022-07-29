@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\Icons\tray_icon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Images\Icons\tray_icon.ico" />
+    <EmbeddedResource Include="index.html" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DS3.Native.Hoster.Core\DS3.Native.Hoster.Core.csproj" />
+  </ItemGroup>
+
+</Project>

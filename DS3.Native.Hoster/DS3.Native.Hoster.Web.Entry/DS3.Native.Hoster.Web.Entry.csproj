@@ -15,14 +15,6 @@
 		<EmbeddedResource Remove="Controllers\**" />
 		<None Remove="Controllers\**" />
 	</ItemGroup>
-
-	<ItemGroup>
-	  <Content Remove="wwwroot\index.html" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <EmbeddedResource Include="wwwroot\index.html" />
-	</ItemGroup>
 	<ItemGroup>
 		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.7">
 			<PrivateAssets>all</PrivateAssets>
@@ -31,9 +23,6 @@
 	</ItemGroup>
 	<ItemGroup>
 		<ProjectReference Include="..\DS3.Native.Hoster.Web.Core\DS3.Native.Hoster.Web.Core.csproj" />
-	</ItemGroup>
-	<ItemGroup>
-	  <Folder Include="Resources\" />
 	</ItemGroup>
 	<ProjectExtensions>
 		<VisualStudio>

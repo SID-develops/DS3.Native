@@ -32,7 +32,8 @@ namespace DS3.Native.Hoster.Web.Entry
                 "DS3.Native.Hoster.Application",
                 "DS3.Native.Hoster.Core",
                 "DS3.Native.Hoster.EntityFramework.Core",
-                "DS3.Native.Hoster.Web.Core"
+                "DS3.Native.Hoster.Web.Core",
+                "DS3.Native.Hoster.Resources"
             };
         }
     }

@@ -22,6 +22,7 @@
 	<ItemGroup>
 		<ProjectReference Include="..\..\DS3.Native\DS3.Native.csproj" />
 		<ProjectReference Include="..\DS3.Native.Hoster.Core\DS3.Native.Hoster.Core.csproj" />
+		<ProjectReference Include="..\DS3.Native.Hoster.Resources\DS3.Native.Hoster.Resources.csproj" />
 	</ItemGroup>
 
 </Project>

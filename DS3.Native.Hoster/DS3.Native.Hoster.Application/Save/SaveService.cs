@@ -10,7 +10,7 @@ namespace DS3.Native.Hoster.Application.Save
         /// </summary>
         /// <param name="sl2FilePath">SL2文件路径</param>
         /// <returns>SL2文件信息</returns>
-        /// <exception cref="Exception"></exception>
+        /// <exception cref="Exception"></exception> 
         public Task<SL2InformationViewDto> GetSL2Information(string sl2FilePath)
         {
             if (!File.Exists(sl2FilePath))
